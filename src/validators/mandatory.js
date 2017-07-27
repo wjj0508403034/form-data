@@ -1,6 +1,6 @@
 'use strict';
 
-formdata.factory("MandatoryValidator", function() {
+angular.module('huoyun.formdata').factory("MandatoryValidator", function() {
 
   function MandatoryValidator(fieldName, errorMessage) {
     this.errorMessage = errorMessage;

@@ -1,6 +1,6 @@
 'use strict';
 
-formdata.factory("Field", function() {
+angular.module('huoyun.formdata').factory("Field", function() {
 
   function Field(name) {
     this.name = name;

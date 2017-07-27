@@ -1,6 +1,6 @@
 'use strict';
 
-formdata.factory("StringEqualValidator", function() {
+angular.module('huoyun.formdata').factory("StringEqualValidator", function() {
 
   function StringEqualValidator(fieldName, errorMessage, options) {
     this.errorMessage = errorMessage;

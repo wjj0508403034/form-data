@@ -1,9 +1,9 @@
 'use strict';
 
-const formdata = angular.module('huoyun.formdata');
+angular.module('huoyun.formdata', []);
 'use strict';
 
-formdata.factory("Field", function() {
+angular.module('huoyun.formdata').factory("Field", function() {
 
   function Field(name) {
     this.name = name;
@@ -39,7 +39,7 @@ formdata.factory("Field", function() {
 });
 'use strict';
 
-formdata.factory("FormData", ["Field", "$q",
+angular.module('huoyun.formdata').factory("FormData", ["Field", "$q",
   function(Field, $q) {
 
     function FormData(...names) {
@@ -107,7 +107,7 @@ formdata.factory("FormData", ["Field", "$q",
 ]);
 'use strict';
 
-formdata.factory("Validators", ["MandatoryValidator", "EmailValidator", "StringEqualValidator",
+angular.module('huoyun.formdata').factory("Validators", ["MandatoryValidator", "EmailValidator", "StringEqualValidator",
   function(MandatoryValidator, EmailValidator, StringEqualValidator) {
 
     return {
@@ -119,7 +119,7 @@ formdata.factory("Validators", ["MandatoryValidator", "EmailValidator", "StringE
 ]);
 'use strict';
 
-formdata.factory("EmailValidator", function() {
+angular.module('huoyun.formdata').factory("EmailValidator", function() {
 
   const PATTERN = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
@@ -140,7 +140,7 @@ formdata.factory("EmailValidator", function() {
 });
 'use strict';
 
-formdata.factory("MandatoryValidator", function() {
+angular.module('huoyun.formdata').factory("MandatoryValidator", function() {
 
   function MandatoryValidator(fieldName, errorMessage) {
     this.errorMessage = errorMessage;
@@ -165,7 +165,7 @@ formdata.factory("MandatoryValidator", function() {
 });
 'use strict';
 
-formdata.factory("StringEqualValidator", function() {
+angular.module('huoyun.formdata').factory("StringEqualValidator", function() {
 
   function StringEqualValidator(fieldName, errorMessage, options) {
     this.errorMessage = errorMessage;

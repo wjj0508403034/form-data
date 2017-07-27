@@ -1,6 +1,6 @@
 {
   "name": "huoyun-formdata",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "form validator MVVM angular",
   "main": "src/index.js",
   "scripts": {

@@ -1,6 +1,6 @@
 'use strict';
 
-formdata.factory("FormData", ["Field", "$q",
+angular.module('huoyun.formdata').factory("FormData", ["Field", "$q",
   function(Field, $q) {
 
     function FormData(...names) {

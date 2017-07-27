@@ -1,6 +1,6 @@
 'use strict';
 
-formdata.factory("EmailValidator", function() {
+angular.module('huoyun.formdata').factory("EmailValidator", function() {
 
   const PATTERN = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 

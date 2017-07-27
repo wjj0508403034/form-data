@@ -1,6 +1,6 @@
 'use strict';
 
-formdata.factory("Validators", ["MandatoryValidator", "EmailValidator", "StringEqualValidator",
+angular.module('huoyun.formdata').factory("Validators", ["MandatoryValidator", "EmailValidator", "StringEqualValidator",
   function(MandatoryValidator, EmailValidator, StringEqualValidator) {
 
     return {

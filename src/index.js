@@ -1,3 +1,3 @@
 'use strict';
 
-const formdata = angular.module('huoyun.formdata');
+angular.module('huoyun.formdata', []);
